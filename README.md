@@ -1,5 +1,8 @@
 # flarum-ext-online
 
+> [!CAUTION]
+> This extension is now marked as abandoned, I won't update it for Flarum 2.0
+
 Display online users on the left sidebar.
 
 **This extension is compatible with Flarum beta 16.**
