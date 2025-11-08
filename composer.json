@@ -1,6 +1,5 @@
 {
     "name": "deltamichael/flarum-ext-online",
-    "version": "1.0.0-dev",
     "description": "Display online users on the left sidebar.",
     "type": "flarum-extension",
     "license": "MIT",

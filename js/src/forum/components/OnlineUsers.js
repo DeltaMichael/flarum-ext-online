@@ -17,7 +17,8 @@ export default class OnlineUsers extends Component {
     view() {
         return [
             m('.OnlineUsers', [
-                m('.OnlineUsers-title', app.forum.attribute('deltamichael-online.titleoflist')),
+            m('.OnlineUsers-title', app.forum.attribute('deltamichael-online.titleoflist')),
+            m('.OnlineUsers-wrapper', [
                 m('.OnlineUsers-list', [
                     app.onlineState.users.map(user => {
                         return m('.OnlineUsers-item', [
@@ -26,7 +27,6 @@ export default class OnlineUsers extends Component {
                                 title: user.displayName()
                             }, [
                                 avatar(user, { className: 'OnlineUsers-avatar' }),
-                                username(user, { className: 'OnlineUsers-username' })
                             ])
                         ]);
                     })
@@ -40,6 +40,7 @@ export default class OnlineUsers extends Component {
                     ])
                 ] : null
             ])
+          ])
         ];
     }
 }
