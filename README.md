@@ -9,7 +9,7 @@ Display online users on the left sidebar.
 
 ## Installation
 
-Run `composer require antoinefr/flarum-ext-online` in Flarum's folder.
+Run `composer require deltamichael/flarum-ext-online` in Flarum's folder.
 
 ## Screenshots
 

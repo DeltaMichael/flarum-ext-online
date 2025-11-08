@@ -1,11 +1,12 @@
 {
-    "name": "antoinefr/flarum-ext-online",
+    "name": "deltamichael/flarum-ext-online",
+    "version": "1.0.0-dev",
     "description": "Display online users on the left sidebar.",
     "type": "flarum-extension",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/AntoineFr/flarum-ext-online/issues",
-        "source": "https://github.com/AntoineFr/flarum-ext-online",
+        "issues": "https://github.com/DeltaMichael/flarum-ext-online/issues",
+        "source": "https://github.com/DeltaMichael/flarum-ext-online",
         "forum": "https://discuss.flarum.org/d/8302"
     },
     "require": {
@@ -13,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AntoineFr\\Online\\": "src/"
+            "Deltamichael\\Online\\": "src/"
         }
     },
     "extra": {

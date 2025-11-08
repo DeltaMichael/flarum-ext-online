@@ -1,8 +1,8 @@
 <?php
 
-namespace AntoineFr\Online;
+namespace Deltamichael\Online;
 
-use AntoineFr\Online\Api\Serializer\OnlineSerializer;
+use Deltamichael\Online\Api\Serializer\OnlineSerializer;
 use Flarum\Extend;
 use Flarum\Api\Controller\ShowForumController;
 use Flarum\Api\Serializer\ForumSerializer;
@@ -19,9 +19,9 @@ return [
     new Extend\Locales(__DIR__ . '/locale'),
 
     (new Extend\Settings())
-        ->serializeToForum('antoinefr-online.titleoflist', 'antoinefr-online.titleoflist', function ($attribute) {
+        ->serializeToForum('deltamichael-online.titleoflist', 'deltamichael-online.titleoflist', function ($attribute) {
             if (empty($attribute)) {
-                return resolve(Translator::class)->get('antoinefr-online.forum.title');
+                return resolve(Translator::class)->get('deltamichael-online.forum.title');
             }
 
             return $attribute;

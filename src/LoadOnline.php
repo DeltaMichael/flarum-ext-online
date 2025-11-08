@@ -1,6 +1,6 @@
 <?php
 
-namespace AntoineFr\Online;
+namespace Deltamichael\Online;
 
 use Carbon\Carbon;
 use Flarum\Api\Controller\ShowForumController;
@@ -21,7 +21,7 @@ class LoadOnline
     public function __invoke(ShowForumController $controller, &$data, ServerRequestInterface $request, Document $document)
     {
         $actor = $request->getAttribute('actor');
-        $ago = Carbon::now()->subtract(5, 'minutes');
+        $ago = Carbon::now()->subtract(15, 'minutes');
 
         $users = User::query()->whereRaw('? < last_seen_at', [$ago])->get();
 
@@ -29,7 +29,7 @@ class LoadOnline
             return ($user->getPreference('discloseOnline') || $actor->can('viewLastSeenAt', $user));
         });
 
-        $max = (int) $this->settings->get('antoinefr-online.displaymax');
+        $max = (int) $this->settings->get('deltamichael-online.displaymax');
 
         $online = collect();
         $onlineMore = 0;

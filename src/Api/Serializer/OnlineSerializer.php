@@ -1,6 +1,6 @@
 <?php
 
-namespace AntoineFr\Online\Api\Serializer;
+namespace Deltamichael\Online\Api\Serializer;
 
 use Flarum\Api\Serializer\AbstractSerializer;
 use Flarum\Http\SlugManager;

@@ -17,7 +17,7 @@ export default class OnlineUsers extends Component {
     view() {
         return [
             m('.OnlineUsers', [
-                m('.OnlineUsers-title', app.forum.attribute('antoinefr-online.titleoflist')),
+                m('.OnlineUsers-title', app.forum.attribute('deltamichael-online.titleoflist')),
                 m('.OnlineUsers-list', [
                     app.onlineState.users.map(user => {
                         return m('.OnlineUsers-item', [
@@ -34,7 +34,7 @@ export default class OnlineUsers extends Component {
                 this.more ? [
                     m('p.OnlineUsers-more', [
                         app.translator.trans(
-                            app.onlineState.users.length > 0 ? 'antoinefr-online.forum.andmore' : 'antoinefr-online.forum.online_users',
+                            app.onlineState.users.length > 0 ? 'deltamichael-online.forum.andmore' : 'deltamichael-online.forum.online_users',
                             { more: this.more }
                         )
                     ])

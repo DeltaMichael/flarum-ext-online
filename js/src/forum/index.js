@@ -5,7 +5,7 @@ import IndexPage from 'flarum/forum/components/IndexPage';
 
 import OnlineUsers from './components/OnlineUsers';
 
-app.initializers.add('antoinefr-online', () => {
+app.initializers.add('deltamichael-online', () => {
     app.store.models.online = User;
 
     extend(IndexPage.prototype, 'sidebarItems', function (items) {

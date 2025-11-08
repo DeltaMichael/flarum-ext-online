@@ -1,18 +1,18 @@
 import app from 'flarum/app';
 
-app.initializers.add('antoinefr-online', () => {
-    app.extensionData.for('antoinefr-online')
+app.initializers.add('deltamichael-online', () => {
+    app.extensionData.for('deltamichael-online')
         .registerSetting(
             {
-                setting: 'antoinefr-online.titleoflist',
-                label: app.translator.trans('antoinefr-online.admin.settings.titleoflist'),
+                setting: 'deltamichael-online.titleoflist',
+                label: app.translator.trans('deltamichael-online.admin.settings.titleoflist'),
                 type: 'text'
             }
         )
         .registerSetting(
             {
-                setting: 'antoinefr-online.displaymax',
-                label: app.translator.trans('antoinefr-online.admin.settings.displaymax'),
+                setting: 'deltamichael-online.displaymax',
+                label: app.translator.trans('deltamichael-online.admin.settings.displaymax'),
                 type: 'number'
             }
         );
